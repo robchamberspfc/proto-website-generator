@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "update":"node helpers/convert-markdown.js && node helpers/new-pages.js",
-    "dev":"cd app && npx @11ty/eleventy --serve"
+    "dev":"cd app && npx @11ty/eleventy --serve",
+    "prod":"node helpers/convert-markdown.js && node helpers/new-pages.js && cd app && eleventy"
   },
   "author": "",
   "license": "ISC",
