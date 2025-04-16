@@ -16,7 +16,7 @@ To run:
 
 ## Hosting
 
-Site is hosted on Netlify at: 
+Site is hosted on Netlify at: https://proto-website-generator.netlify.app/
 
 On update to main, the site will regenerate the pages and navigation from the [pages.json](helpers/new-pages.json) file and HTML from markdown and deploy the update to netlify.
 
@@ -53,6 +53,12 @@ Currently uses two page templates (simple and navigation), could be extended to 
 
 **This is also automatically run on deployment.**
 
-### New pages
+### Page editor
 
-A page to help generate new pages
+Hosted on Github pages at: https://robchamberspfc.github.io/proto-website-generator/ 
+
+Code located at: 
+
+`/helpers/editor`
+
+A page to help generate new pages or edit existing ones. Will generate a new pages.json that can replace the existing (manual step). will read the latest pages.json form github on load so all actions can be done without needing to clone the repo.
