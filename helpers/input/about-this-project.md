@@ -1,1 +1,1 @@
-This prototype was developed by the Rob Chambers
+This prototype was developed by the Rob Chambers.

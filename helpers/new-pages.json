@@ -1,15 +1,78 @@
-[{
+[
+    {
         "name": "Home",
         "type": "home",
-        "location": "/",
+        "location": "./",
         "fileName": "home",
-        "topSection": [{
-            "name": "Get started",
-            "description": "",
-            "items": []
-        }],
-        "linkBlocks": []
-    }, {
+        "topSection": [
+            {
+                "name": "Block title",
+                "description": "",
+                "items": [
+                    {
+                        "title": "Page name",
+                        "url": "Relative address",
+                        "description": "Short description"
+                    },
+                    {
+                        "title": "Page name",
+                        "url": "Relative address",
+                        "description": "Short description"
+                    }
+                ]
+            },
+            {
+                "name": "Block title",
+                "description": "",
+                "items": [
+                    {
+                        "title": "Page name",
+                        "url": "Relative address",
+                        "description": "Short description",
+                        "pill": "text label"
+                    },
+                    {
+                        "title": "Page name",
+                        "url": "Relative address",
+                        "description": "Short description",
+                        "pill": "text label"
+                    }
+                ]
+            },
+            {
+                "name": "Block title",
+                "description": "",
+                "items": [
+                    {
+                        "title": "Page name",
+                        "url": "Relative address",
+                        "description": "Short description"
+                    },
+                    {
+                        "title": "Page name",
+                        "url": "Relative address",
+                        "description": "Short description"
+                    }
+                ]
+            }
+        ],
+        "linkBlocks": [
+            {
+                "name": "Block title",
+                "items": [
+                    {
+                        "title": "Page name",
+                        "url": "Relative address"
+                    },
+                    {
+                        "title": "Page name",
+                        "url": "Relative address"
+                    }
+                ]
+            }
+        ]
+    },
+    {
         "name": "About this project",
         "type": "basic",
         "location": "/about",
