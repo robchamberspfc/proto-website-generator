@@ -6,13 +6,13 @@
         "fileName": "home",
         "topSection": [
             {
-                "name": "Block title",
+                "name": "Introduction",
                 "description": "",
                 "items": [
                     {
-                        "title": "Page name",
-                        "url": "Relative address",
-                        "description": "Short description"
+                        "title": "About",
+                        "url": "/about",
+                        "description": "About this site"
                     },
                     {
                         "title": "Page name",
