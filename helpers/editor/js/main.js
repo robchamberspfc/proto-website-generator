@@ -1,4 +1,4 @@
-const url = "https://raw.githubusercontent.com/robchamberspfc/data-standards/refs/heads/main/helpers/new-pages.json"
+const url = "https://raw.githubusercontent.com/robchamberspfc/proto-website-generator/refs/heads/main/helpers/new-pages.json"
 const selectMenu = document.getElementById("pageSelect")
 const newPageButton = document.getElementById("newPageButton")
 const radioButtons = document.getElementById("pageTypes")
