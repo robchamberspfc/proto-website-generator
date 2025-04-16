@@ -1,0 +1,20 @@
+[{
+        "name": "Home",
+        "type": "home",
+        "location": "/",
+        "fileName": "home",
+        "topSection": [{
+            "name": "Get started",
+            "description": "",
+            "items": []
+        }],
+        "linkBlocks": []
+    }, {
+        "name": "About this project",
+        "type": "basic",
+        "location": "/about",
+        "fileName": "about-this-project",
+        "breadcrumb": [],
+        "related": []
+    }
+]

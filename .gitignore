@@ -1,5 +1,16 @@
 *.DS_Store
 *node_modules
-*_site
 *test
-_includes/_markdown*
+
+// ignore contents of app directory by default
+app/*
+
+// control the parts of app directory to include (stops generated files ending up in repo)
+!app/_includes
+app/_includes/_markdown*
+!app/_data
+!.eleventy.js
+!.eleventyignore
+!app/assets
+!app/images
+

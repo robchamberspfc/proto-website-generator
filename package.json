@@ -1,0 +1,17 @@
+{
+  "name": "markdown-html",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "update":"node helpers/convert-markdown.js && node helpers/new-pages.js",
+    "dev":"cd app && npx @11ty/eleventy --serve"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@11ty/eleventy": "^2.0.1",
+    "marked": "^15.0.7",
+    "sanitize-html": "^2.14.0"
+  }
+}
