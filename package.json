@@ -1,7 +1,7 @@
 {
-  "name": "markdown-html",
+  "name": "proto-website-generator",
   "version": "1.0.0",
-  "description": "",
+  "description": "A simple static site generator based on markdown files",
   "main": "index.js",
   "scripts": {
     "update":"node helpers/convert-markdown.js && node helpers/new-pages.js",

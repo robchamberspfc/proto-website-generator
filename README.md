@@ -2,7 +2,7 @@
 
 ## About
 
-Prototype site for content supporting the adoption and use of API and data standards within the social housing sector.
+Prototype site creator. Based on markdown with json config and designed to be updated through Github UI.
 
 ## Prototype
 
@@ -13,6 +13,10 @@ To run:
 `npm install`
 
 `npx @11ty/eleventy --serve` to run locally on hot reloading server
+
+Underlying styling and grid from [Bootstrap](https://getbootstrap.com/)
+
+Includes `.gitignore` to exclude generated files from repository. Intent is generation of HTML (oincluding conversion of markdown) is done on deploy using `npm run prod`.
 
 ## Hosting
 
