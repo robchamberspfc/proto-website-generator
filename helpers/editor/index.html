@@ -28,10 +28,21 @@
     <div class="row bg-light pt-5 pb-5">
       <div class="col">
         <div class="container pb-2">
-          <h1>Create or edit json for pages in MVP</h1>
-          <button type="button" class="btn btn-primary btn-lg border" onclick="downloadJSON()">Download</button>
-          <button type="button" class="btn btn-warning btn-sm" onclick="reset()">Reset</button>
-          <p class="lead pt-3">Page saves: <span id="count">0</span></p>
+          <div class="row">
+            <div class="col col-lg-7">
+              <h1>Create or edit json for pages in prototype</h1>
+              <p class="lead">Allows editing or creation of new pages in the pages.json file that supports the simple
+                website
+                generator. Will keep a json file updated in the background that can be uploaded to github to update
+                site.</p>
+            </div>
+            <div class="col col-lg-4 offset-lg-1">
+              <button type="button" class="btn btn-primary btn-lg border" onclick="downloadJSON()">Download new pages
+                file</button>
+              <p class="lead pt-3">Saved edits/additions: <span id="count">0</span></p>
+              <button type="button" class="btn btn-warning btn-sm" onclick="reset()">Reset all changes</button>
+            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -39,7 +50,7 @@
       <div class="row">
         <div class="col col-lg-6 col-md-12">
           <strong>
-            <label for="choosePage" class="h2 mb-2">Choose page
+            <label for="pageSelect" class="h2 mb-2">Choose page
               <select class="form-select form-select-lg mt-3 mb-3" name="pageSelect" onchange="displayPage()"
                 id="pageSelect">
                 <option selected>Select page</option>
@@ -48,12 +59,17 @@
           </strong>
         </div>
         <div class="col col-lg-6 col-md-12 mt-4 pt-4">
-          <button type="button" id="newPageButton" class="btn btn-primary btn-lg border" onclick="createPage()">Add new page</button>
+          <button type="button" id="newPageButton" class="btn btn-primary btn-lg border" onclick="createPage()">Add new
+            page</button>
         </div>
       </div>
       <hr>
       <div class="row mb-5" id="edit" hidden>
-        <h2>Edit this page</h2>
+        <h2>Edit this page
+          <button type="button" class="btn btn-primary btn-lg border ms-5 " onclick="saveEdit()">Save
+            changes</button>
+          <button type="button" id="newPageButton" class="btn btn-warning btn-sm border" onclick="softReset()">Cancel
+            current edit</button></h2>
         <small class="mb-3"><a data-bs-toggle="collapse" href="#editExample" role="button" aria-expanded="false"
             aria-controls="editExample">
             See example
@@ -65,17 +81,19 @@
           <div class="collapse" id="editExample">
             <textarea id="exampleEdit" class="form-control" readonly></textarea>
           </div>
-          <button type="button" class="btn btn-primary btn-lg border mt-2" onclick="saveEdit()">save</button>
         </div>
       </div>
       <div class="row mb-5" id="new" hidden>
-        <h2>Create new page</h2>
+        <h2>Create new page
+          <button type="button" class="btn btn-primary btn-lg border ms-5" onclick="saveNew()">Save
+            new page</button>
+          <button type="button" id="newPageButton" class="btn btn-warning btn-sm border" onclick="softReset()">Cancel
+            current edit</button></h2>
         <div id="pageTypes" class="mt-4 mb-4"></div>
         <div class="col col-lg-6 col-md-12">
           <textarea id="newEdit" class="form-control"></textarea>
         </div>
-        <div class="col col-lg-6 col-md-12"><button type="button" class="btn btn-primary btn-lg border mt-2"
-            onclick="saveNew()">save</button></div>
+        <div class="col col-lg-6 col-md-12"></div>
       </div>
     </div>
   </main>

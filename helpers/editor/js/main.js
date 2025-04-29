@@ -55,23 +55,25 @@ createPage = () => {
 saveEdit = () => {
     let selection = selectMenu.selectedOptions[0].value
     pages[selection] = JSON.parse(document.getElementById("currentEdit").value)
-    document.getElementById("edit").hidden = true
+    k++
+    count.innerHTML=k
     softReset ()
 }
 
 saveNew = () => {
     newPageContent = JSON.parse(document.getElementById("newEdit").value)
     pages.push(newPageContent)
-    document.getElementById("new").hidden = true
+    k++
+    count.innerHTML=k
     softReset ()
 }
 
 softReset = () => {
+    document.getElementById("edit").hidden = true
+    document.getElementById("new").hidden = true
     selectMenu.value = "Select page"
     selectMenu.disabled = false
     newPageButton.disabled = false
-    k++
-    count.innerHTML=k
     populateSelect(pages)
 }
 
