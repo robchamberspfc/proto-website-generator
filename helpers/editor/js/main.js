@@ -77,6 +77,7 @@ softReset = () => {
 
 reset = () => {
     selectMenu.disabled =  false
+    newPageButton.disabled = false
     k=0
     count.innerHTML=k
     document.getElementById("edit").hidden = true
