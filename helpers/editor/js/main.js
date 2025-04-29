@@ -8,7 +8,7 @@ const pageTypes = Object.keys(examples)
 let k=0
 let pages = []
 
-async function pageLoad() {
+pageLoad = async () => {
     const response = await fetch(url)
     pages = await response.json()
     populateSelect(pages)
