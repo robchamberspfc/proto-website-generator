@@ -16,7 +16,7 @@ To run:
 
 Underlying styling and grid from [Bootstrap](https://getbootstrap.com/)
 
-Includes `.gitignore` to exclude generated files from repository. Intent is generation of HTML (oincluding conversion of markdown) is done on deploy using `npm run prod`.
+Includes `.gitignore` to exclude generated files from repository. Intent is generation of HTML (including conversion of markdown) is done on deploy using `npm run prod`.
 
 ## Hosting
 
@@ -65,4 +65,4 @@ Code located at:
 
 `/helpers/editor`
 
-A page to help generate new pages or edit existing ones. Will generate a new pages.json that can replace the existing (manual step). will read the latest pages.json form github on load so all actions can be done without needing to clone the repo.
+A page to help generate new pages or edit existing ones. Will generate a new pages.json that can replace the existing (manual step). Will read the latest pages.json form github on load so all actions can be done without needing to clone the repo.
